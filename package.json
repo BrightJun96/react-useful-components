@@ -1,28 +1,53 @@
 {
-  "name": "react-useful-components",
-  "private": true,
-  "version": "0.0.0",
+  "name": "react-useful-common-components",
+  "description": "react useful common components",
+  "author": {
+    "name": "dev-cheol-jun",
+    "email": "devjjalseu@gmail.com"
+  },
+  "keywords": [
+    "react",
+    "components"
+  ],
+  "license": "MIT",
+  "version": "0.0.19",
   "type": "module",
+  "main": "./dist/react-useful-common-components.umd.cjs",
+  "module": "./dist/react-useful-common-components.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/react-useful-common-components.js",
+      "require": "./dist/react-useful-common-components.umd.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BrightJun96/react-useful-components.git"
+  },
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "build": "tsc && vite build"
   },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@types/node": "^20.10.6",
     "@types/react": "^18.2.43",
     "@types/react-dom": "^18.2.17",
     "@typescript-eslint/eslint-plugin": "^6.14.0",
     "@typescript-eslint/parser": "^6.14.0",
     "@vitejs/plugin-react": "^4.2.1",
-    "eslint": "^8.55.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
-    "typescript": "^5.2.2",
-    "vite": "^5.0.8"
+    "typescript": "5.2.2",
+    "vite": "5.0.8",
+    "vite-plugin-dts": "^3.7.0"
   }
 }
