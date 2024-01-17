@@ -4,8 +4,8 @@ import { ICheck } from "./checkbox/types";
 
 const App = () => {
   const foodOptions: ICheck[] = [
-    { label: "치킨", value: "chicken", checked: false },
-    { label: "피자", value: "pizza", checked: false },
+    { label: "치킨", value: "chicken", checked: true },
+    { label: "피자", value: "pizza", checked: true },
     { label: "밥", value: "rice", checked: false },
   ];
 

@@ -22,6 +22,8 @@ const CheckBoxGroup = <T,>({
   const { options, setOptions, onCheckHandler } =
     useGroupCheckOption(initOptions);
 
+  // console.log("options :", options);
+
   useGroupCheckParentState<T>({
     stateKey,
     stateType,
