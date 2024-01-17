@@ -10,7 +10,7 @@
     "components"
   ],
   "license": "MIT",
-  "version": "0.0.22",
+  "version": "0.0.39",
   "type": "module",
   "main": "./dist/react-useful-common-components.umd.cjs",
   "module": "./dist/react-useful-common-components.js",
@@ -38,9 +38,9 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@types/node": "^20.10.6",
     "@types/react": "^18.2.43",
     "@types/react-dom": "^18.2.17",
+    "@types/node": "^20.10.6",
     "@typescript-eslint/eslint-plugin": "^6.14.0",
     "@typescript-eslint/parser": "^6.14.0",
     "@vitejs/plugin-react": "^4.2.1",
@@ -49,5 +49,9 @@
     "typescript": "5.2.2",
     "vite": "5.0.8",
     "vite-plugin-dts": "^3.7.0"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }
