@@ -18,7 +18,7 @@
     "jsx": "react-jsx" // JSX 코드 처리 방식 (React JSX)
   },
   // 컴파일할 파일 패턴
-  "include": ["./src/**/*.ts"]
+  "include": ["src"]
   // "references": [
   //   {
   //     "path": "./tsconfig.node.json"

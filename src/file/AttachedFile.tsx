@@ -1,5 +1,11 @@
 const AttachedFile = () => {
-  return <div> 테스트 첨부파일 컴포넌트</div>;
+  return (
+    <div>
+      <label>
+        <input type="checkbox" />
+      </label>
+    </div>
+  );
 };
 
 export default AttachedFile;

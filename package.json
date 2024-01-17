@@ -10,7 +10,7 @@
     "components"
   ],
   "license": "MIT",
-  "version": "0.0.19",
+  "version": "0.0.22",
   "type": "module",
   "main": "./dist/react-useful-common-components.umd.cjs",
   "module": "./dist/react-useful-common-components.js",
