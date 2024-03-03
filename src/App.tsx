@@ -4,6 +4,7 @@ import { ICheck } from "./checkbox/types";
 import {IHeader, IRow} from "./table/types";
 import Table from "./table/Table";
 import {SideNav} from "./side-navigation";
+import TextField from "./text-field/TextField";
 
 const App = () => {
   const foodOptions: ICheck[] = [
@@ -60,6 +61,7 @@ const App = () => {
 
   const [selection, setSelection] = useState<IRow[]>([]);
 
+  const [text,setText] = useState("")
   return (
     <div>
       <CheckBoxGroup<{ food: ICheck[] }>
@@ -68,6 +70,15 @@ const App = () => {
         stateKey="food"
         setState={setForm}
       />
+      <TextField type={"text"} label={"아이디"}
+                 placeholder={"아이디를 입력하세요"}
+                 name={"id"} value={text} onChange={(name, value) => setText(value) }
+                 valid={{
+        message:"sdfsdf",
+        async validator() {
+          return true
+        }}}
+        initField={() => setText("")}/>
       <SideNav/>
       <Table headers={headers} rows={rows} onSelect={setSelection} />
     </div>
