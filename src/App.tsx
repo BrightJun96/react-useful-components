@@ -3,6 +3,7 @@ import CheckBoxGroup from "./checkbox/group/CheckBoxGroup";
 import { ICheck } from "./checkbox/types";
 import {IHeader, IRow} from "./table/types";
 import Table from "./table/Table";
+import {SideNav} from "./side-navigation";
 
 const App = () => {
   const foodOptions: ICheck[] = [
@@ -67,6 +68,7 @@ const App = () => {
         stateKey="food"
         setState={setForm}
       />
+      <SideNav/>
       <Table headers={headers} rows={rows} onSelect={setSelection} />
     </div>
   );
